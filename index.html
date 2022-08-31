@@ -10,10 +10,42 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="white" />
     </head>
+    
     <body class="fullscreen">
         <div class="container">
-          ddfd
+          <header>
+            <img src="images/logo.png">
+            <div class="line"></div>
+          </header>
+          <main>
+            <div class="tituloIMC">
+              <h1>Calcule seu IMC</h1>
+            </div>
+      
+            <div class="titulos">Nome completo:</div>
+              <input class="caixa" type="text" id="nome" placeholder="Digite o seu nome completo"/>
+            
+            <div class="titulos">Idade:</div>
+              <input class="caixa" type="text" id="idade" placeholder="Digite a sua idade"/>
+            
+            <div class="titulos">Sexo:</div>
+              <input class="caixa" type="text" id="sexo" placeholder="Digite o seu sexo"/>
+            
+            <div class="titulos">Altura:</div>
+              <input class="caixa" type="text" id="altura" placeholder="Digite a sua altura (Ex: 1.60)"/>
+      
+            <div class="titulos">Peso:</div>
+              <input class="caixa" type="text" id="peso" placeholder="Digite o seu peso (Ex: 50.1)"/>
+      
+          <button class="botao" onclick="entradaIMC()">Calcular IMC</button>
+      
+            <div class="resultado">
+              <p id="resultadoIMC"></p>
+              <h3 id="IMC"></h3>
+            </div>
+      
+          </main>
         </div>
         <script src="js/main.js"></script>
-    </body>
+      </body>
 </html>

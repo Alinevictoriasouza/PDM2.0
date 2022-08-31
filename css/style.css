@@ -1,20 +1,109 @@
-body {
-    font-family: sans-serif;
-}
-
-html, .fullscreen {
-    display: flex;
-    height: 100%;
+*{
     margin: 0;
     padding: 0;
-    width: 100%;
-}
-
-.container {
-    margin: auto;
-}
-
-.title {
-    font-size: 3rem;
-}
-
+    }
+    
+    main{
+      background-color: #9A7767 ;
+      height: 530px;
+      width: 70%;
+      margin-top: 20px;
+      margin-left: 15%;
+      border-radius: 15px;
+      opacity: 88%;
+    }
+    
+    body {
+        background-image: url("../images/image.png");;
+    }
+    
+    img{
+      margin-top: 1%;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    header{
+        height: 96px;
+      background-color: #ffffff ;
+      width: 100%;
+    }
+    
+    .line{
+      background-color: #9A7767 ;
+      height: 1px;
+      width: 100%;
+    }
+    
+    .tituloIMC{
+      text-align: center;
+      color: white;
+      margin-top: 2%;
+    }
+    
+    .titulos{
+      font-size: 20px;
+      color: white;
+      font-family: 'Inter';
+      text-align: center;
+      margin-top: 2%;
+    }
+    
+    .caixa{
+      height: 6%;
+      width: 60%;
+      font-size: 15px;
+      border-radius: 10px;
+      background-color: #cfb2a5;
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.25);
+      align-items: center;
+      display: block;
+      margin: 0 auto;
+      border-color: white;
+      border-width: 0.5px;
+    }
+    
+    input::placeholder {
+      color: #808080;
+    }
+    
+    .botao{
+      display: block;
+      margin: 0 auto;
+      margin-top: 1.5%;
+      border-radius: 12px;
+      color: #FFFFFF;
+      font-weight: bold;
+      background-color: #7E5644;
+      padding: 7px 40px;
+      box-shadow: 5px 2px 2px #454545;
+      border-color: rgba(86, 54, 40, 1);
+      transition-duration: 0.4s;
+      border-width: 1px;
+    }
+    
+    .botao:hover {
+      background-color:  #a59797; 
+      color: black;
+      cursor:pointer;
+      box-shadow: 0 0 45px #8f7070;
+    }
+    
+    .resultado{
+      color: white;
+      font-size: 16px;
+      text-align: center;
+      margin-top: 1% ;
+    }
+    
+    @media (max-width: 800px)
+    {
+      main
+       {
+        height: 450px;
+       }
+    }
